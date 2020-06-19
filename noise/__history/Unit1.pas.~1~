@@ -1,0 +1,98 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.jpeg, math,unit2,graphutil;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Image1: TImage;
+    Memo1: TMemo;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  xo:integer;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+x,y,c:integer;
+b:tbitmap;
+col : tcolor;
+n:tperlinnoise;
+num:double;
+begin
+
+
+n := tperlinnoise.Create(100);
+randomize;
+n.InitNoise(randomrange(0,100));
+
+
+b := tbitmap.Create;
+b.Width :=   image1.Width;
+b.Height := image1.Height;
+
+for x := 0 to b.Width-1 do
+for y  := 0 to b.Height-1 do
+begin
+c := round(   (n.perlinnoise2d((x+xo)*0.02,y*0.02,0.3,1,4)+0.5)*255    );
+//num := 0.5+ n.perlinnoise2d((x+xo)*0.05,y*0.01,0.25,1,4)+0.5;
+
+if num < 0 then num :=0;
+if c<0 then c := 0;
+if c>255 then c := 255;
+
+
+col :=   rgb(c,c,c);
+
+
+if c < 60 then col := clblue;
+if c >= 60 then col := clyellow;
+if c > 120 then col := clgreen;
+
+
+//if (c > 155) and (c < 160) then   col := clpurple;
+
+
+
+
+
+
+
+
+
+b.Canvas.Pixels[x,y] := col;
+end;
+image1.Picture.Bitmap := b;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+xo := xo + 1;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+xo:=0;
+end;
+
+end.

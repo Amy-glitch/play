@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/09 04:10:58.000.563,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 20:12:02.000.252,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 21:25:36.000.803,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/26 21:44:09.000.205,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/16 15:49:32.000.620,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/16 16:23:17.000.651,=C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/06/17 00:59:21.000.248,C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Karen\Documents\Embarcadero\Studio\code_templates\Unit1.pas</Transaction>
+    <Transaction>2020/06/17 00:59:21.000.248,C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Karen\Documents\Embarcadero\Studio\code_templates\Unit1.dfm</Transaction>
+    <Transaction>2020/06/17 00:59:24.000.801,C:\Users\Karen\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Karen\Documents\Embarcadero\Studio\code_templates\Project1.dproj</Transaction>
+    <Transaction>2020/06/17 22:52:08.523,=C:\Users\Karen\Documents\IT\noise\Unit3.pas</Transaction>
+    <Transaction>2020/06/17 23:11:48.965,=C:\Users\Karen\Documents\IT\noise\Unit2.pas</Transaction>
+    <Transaction>2020/06/17 23:14:06.373,C:\Users\Karen\Documents\IT\noise\uterrein.pas=C:\Users\Karen\Documents\IT\noise\Unit2.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
